@@ -34,7 +34,7 @@ app.post('/login', async (req, res) => {
     const [rows] = await db.execute('SELECT * FROM Users WHERE username = ? AND password_hash = ?', [username, password]);
 
     // If there isn't a user with the given credentials, return
-    
+    if (rows.length === 0) return res.redirect('/');
 
 })
 
