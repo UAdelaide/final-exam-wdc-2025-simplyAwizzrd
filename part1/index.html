@@ -68,7 +68,8 @@
                 },
                 fetchDogInput() {
                     if (this.userInput === "dog") {
-                        
+                        this.fetchDog();
+                        this.userInput = '';
                     }
                 },
                 startCountdown() {
