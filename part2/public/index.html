@@ -63,6 +63,9 @@
                 const img = await fetch('https://dog.ceo/api/breeds/image/random');
                 dog.image = (await img.json()).message;
               }
+              dogs.value = dogData;
+            } catch (err) {
+              console.error(err);
             }
           })
         };
