@@ -13,7 +13,9 @@ app.use(express.static(path.join(__dirname, '/public')));
 
 // Session config
 app.use(session({
-    secret: 'secret'
+    secret: 'secret',
+    resave: false,
+    saveUninitialized: true,
 }))
 
 // Connect to the database
