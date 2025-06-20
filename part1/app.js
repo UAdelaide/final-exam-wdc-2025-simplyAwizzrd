@@ -12,3 +12,5 @@ async function databaseConnection() {
         database: 'DogWalkService'
     });
 }
+
+async function testData
