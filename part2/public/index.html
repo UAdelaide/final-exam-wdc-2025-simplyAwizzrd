@@ -58,7 +58,8 @@
           onMounted(async () => {
             try {
               const res = await fetch('/api/dogs');
-              const 
+              const dogData = await res.json();
+              for (const dog )
             }
           })
         };
