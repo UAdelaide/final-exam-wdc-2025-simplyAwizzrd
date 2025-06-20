@@ -70,7 +70,8 @@ app.get('/logout', (req, res) => {
         if (err) {
             console.error('Logout error: ', err);
         }
-        res.clearCookie('connect.')
+        res.clearCookie('connect.sid'); // Clear the session's cookie
+        
     })
 })
 
