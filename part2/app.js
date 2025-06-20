@@ -10,6 +10,10 @@ const app = express();
 app.use(express.json());
 app.use(express.static(path.join(__dirname, '/public')));
 
+// Connect to the database
+let db;
+
+
 // Routes
 // Login route
 app.post('/login', async (req, res) => {
