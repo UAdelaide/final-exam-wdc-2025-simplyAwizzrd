@@ -37,7 +37,11 @@ app.post('/login', async (req, res) => {
     if (rows.length === 0) return res.redirect('/');
 
     const user = rows[0];
-    
+
+    // Save the user info into the session
+    req.session.user = {
+        id: user.user_id;
+    }
 
 })
 
