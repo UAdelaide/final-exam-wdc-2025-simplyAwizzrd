@@ -59,6 +59,6 @@ router.post('/:id/apply', async (req, res) => {
   }
 });
 
-// GET /api/walks/
+// GET /api/walks/mydogs - get all dogs owned by the logged user
 
 module.exports = router;
