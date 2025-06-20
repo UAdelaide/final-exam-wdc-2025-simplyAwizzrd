@@ -13,6 +13,9 @@ app.use(express.static(path.join(__dirname, '/public')));
 // Connect to the database
 let db;
 
+mysql.createConnection({
+    host: 'localhost'
+})
 
 // Routes
 // Login route
