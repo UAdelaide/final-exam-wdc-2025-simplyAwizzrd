@@ -63,7 +63,9 @@ router.post('/:id/apply', async (req, res) => {
 router.get('/mydogs', async (req, res) => {
   const ownerId = req.session.user.id; // This assumes the user info is stored in the session
 
-  
+  try {
+    const [rows] = await db.query
+  }
 })
 
 module.exports = router;
