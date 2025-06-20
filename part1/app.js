@@ -88,7 +88,7 @@ app.get('/api/walkers/summary', async (req, res) => {
     }
 });
 
-app.listen(8080, async () => { // Port forwarding occurs
+app.listen(8080, async () => { // Port forwarding may occur
     await databaseConnection();
     await testData();
 });
