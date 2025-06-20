@@ -29,5 +29,6 @@ async function testData() {
 
     await db.execute(`
         INSERT IGNORE INTO Walks (request_id, walker_id, owner_id, rating) VALUES
+        ((SELECT ))
     `);
 }
