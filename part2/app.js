@@ -40,8 +40,10 @@ app.post('/login', async (req, res) => {
 
     // Save the user info into the session
     req.session.user = {
-        id: user.user_id;
-    }
+        id: user.user_id,
+        username: user.username,
+        role: user.role
+    };
 
 })
 
