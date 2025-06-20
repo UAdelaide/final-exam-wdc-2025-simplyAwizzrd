@@ -15,5 +15,6 @@ async function databaseConnection() {
 
 async function testData() {
     await db.execute(`
-        INSERT IGNORE INTO Users
+        INSERT IGNORE INTO Users (username, email, password_hash, role) VALUES
+        ('alice123', 'alice)
 }
