@@ -68,3 +68,5 @@ app.get('/api/walkrequests/open', async (req, res) => {
         res.status(500).json({ error: err.message });
     }
 });
+
+app.get('/api/walkers/summary')
