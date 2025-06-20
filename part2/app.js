@@ -45,7 +45,8 @@ app.post('/login', async (req, res) => {
         role: user.role
     };
 
-    // Then redirect based on the 
+    // Then redirect based on the user's role
+    if (user.role === 'owner') 
 
 })
 
