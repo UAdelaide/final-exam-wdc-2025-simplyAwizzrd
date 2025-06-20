@@ -12,7 +12,9 @@ app.use(express.urlencoded({ extended: true })); // Almost forgot the middleware
 app.use(express.static(path.join(__dirname, '/public')));
 
 // Session config
-app.use(session)
+app.use(session({
+    
+}))
 
 // Connect to the database
 let db;
