@@ -89,4 +89,6 @@ app.get('/api/walkers/summary', async (req, res) => {
 });
 
 app.listen(8080, async () => {
-    await
+    await databaseConnection();
+    await testData();
+    console.log('Server ')
