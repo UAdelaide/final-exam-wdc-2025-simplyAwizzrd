@@ -22,5 +22,6 @@ async function testData() {
     `);
 
     await db.execute(`
-        INSERT IGNORE INTO Dogs (owner_id, name, size)
+        INSERT IGNORE INTO Dogs (owner_id, name, size) VALUES
+        ((SELECT user_id FROM Users WHERE username = ))
 }
