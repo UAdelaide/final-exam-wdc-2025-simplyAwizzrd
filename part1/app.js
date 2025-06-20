@@ -80,6 +80,8 @@ app.get('/api/walkers/summary', async (req, res) => {
             LEFT JOIN WalkRatings r ON u.user_id = r.walker_id
             LEFT JOIN WalkRequests wr ON wr.request_id = r.request_id
             WHERE u.role = 'walker'
-            
+            GROUP BY u.username
+        `);
+        res.json(rows);
 
             )
