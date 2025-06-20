@@ -1,6 +1,6 @@
 const express = require('express');
 const path = require('path');
-const session = require('express-session');
+const session = require('express-session'); // For session management
 const mysql = require('mysql2/promise');
 require('dotenv').config();
 
