@@ -31,7 +31,7 @@
             <!-- form.dog_id bound, filled with names of the dogs owned by the logged user -->
             <select v-model="form.dog_id" class="form-select" required>
               <option disabled value="">--Choose a dog--</option>
-              <!-- Loop through -->
+              <!-- Loop through myDogs array and show each name in it -->
               <option v-for="dog in myDogs" :value="dog.dog_id">{{ dog.dog_name }}</option>
             </select>
           </div>
