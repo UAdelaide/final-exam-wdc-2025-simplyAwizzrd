@@ -40,3 +40,6 @@ async function testData() {
         (SELECT user_id FROM Users WHERE username = 'carol123'), 5);
     `);
 }
+
+app.get('/api/dogs', async (req, res) => {
+    
