@@ -17,7 +17,10 @@ mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: '',
-    database: 'DogWalking'
+    database: 'DogWalkService'
+}).then(connection => {
+    
+})
 })
 
 // Routes
