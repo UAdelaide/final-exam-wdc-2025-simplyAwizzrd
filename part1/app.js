@@ -88,4 +88,5 @@ app.get('/api/walkers/summary', async (req, res) => {
     }
 });
 
-app.l
+app.listen(8080, async () => {
+    await
