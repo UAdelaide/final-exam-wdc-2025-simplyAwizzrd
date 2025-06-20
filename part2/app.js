@@ -21,7 +21,7 @@ mysql.createConnection({
 }).then(connection => {
     db = connection;
 }).catch(err => {
-    console.
+    console.error('DB connection failed:', err);
 })
 })
 
