@@ -32,9 +32,9 @@ app.post('/login', async (req, res) => {
 
     // CHeck if user with given username and password actually exists
     const [rows] = await db.execute('SELECT * FROM Users WHERE username = ? AND password_hash = ?', [username, password]);
-    
 
-    i
+    // If there isn't a user with the given credentials, return
+    
 
 })
 
