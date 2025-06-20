@@ -23,14 +23,14 @@ mysql.createConnection({
 }).catch(err => {
     console.error('DB connection failed:', err);
 })
-})
+
 
 // Routes
 // Login route
 app.post('/login', async (req, res) => {
     const { username, password } = req.body;
 
-    const [rows] = await d
+    const [rows] = await db.execute
 
 })
 
