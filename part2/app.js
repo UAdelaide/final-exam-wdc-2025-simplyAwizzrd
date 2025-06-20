@@ -30,8 +30,9 @@ mysql.createConnection({
 app.post('/login', async (req, res) => {
     const { username, password } = req.body;
 
-    // 
+    // CHeck if user with given username and password actually exists
     const [rows] = await db.execute('SELECT * FROM Users WHERE username = ? AND password_hash = ?', [username, password]);
+    
 
     i
 
