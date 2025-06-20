@@ -15,7 +15,7 @@ app.use(express.static(path.join(__dirname, '/public')));
 app.post('/login', async (req, res) => {
     const { username, password } = req.body;
 
-    const [rows]
+    const [rows] = await d
 
 })
 
