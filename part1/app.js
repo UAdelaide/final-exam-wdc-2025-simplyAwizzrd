@@ -13,4 +13,7 @@ async function databaseConnection() {
     });
 }
 
-async function testData
+async function testData() {
+    await db.execute(`
+        INSERT 
+}
