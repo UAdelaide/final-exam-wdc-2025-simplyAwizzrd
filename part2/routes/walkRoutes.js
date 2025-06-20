@@ -62,7 +62,7 @@ router.post('/:id/apply', async (req, res) => {
 // GET /api/walks/mydogs - get all dogs owned by the logged user
 router.get('/mydogs', async (req, res) => {
 
-  if
+  if (!req.session.user) return res.status(401.json({ error: 'Not logged in'}));
 
   const ownerId = req.session.user.id; // This assumes the user info is stored in the session
 
