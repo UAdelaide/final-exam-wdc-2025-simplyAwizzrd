@@ -53,7 +53,6 @@ app.post('/login', async (req, res) => {
     } else {
         res.redirect('/');
     }
-    // I think this is all that's required
 });
 
 const walkRoutes = require('./routes/walkRoutes');
