@@ -28,6 +28,9 @@ async function testData() {
     `);
 
     await db.execute(`
+        INSERT IGNORE INTO WalkRequests (owner_id, dog_id, date, time, duration
+
+    await db.execute(`
         INSERT IGNORE INTO WalkRatings (request_id, walker_id, owner_id, rating) VALUES
         ((SELECT request_id FROM WalkRequests WHERE request_id = 2),
         (SELECT user_id FROM Users WHERE username = 'bobwalker'),
