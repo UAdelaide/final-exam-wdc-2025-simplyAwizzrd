@@ -36,6 +36,9 @@ app.post('/login', async (req, res) => {
     // If there isn't a user with the given credentials, return
     if (rows.length === 0) return res.redirect('/');
 
+    const user = rows[0];
+    
+
 })
 
 const walkRoutes = require('./routes/walkRoutes');
