@@ -100,7 +100,6 @@
         async function loadDogs() {
           try {
             const res = await fetch('/api/walks/mydogs'); // Call the route to get the dogs
-            const data = await res.json();
             myDogs.value = await res.json(); // Fill the myDogs array with the response ... the dogs
           } catch (err) {
             console.error('Failed fetching dogs (again, no pun intended): ', err);
