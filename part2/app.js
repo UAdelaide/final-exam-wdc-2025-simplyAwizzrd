@@ -63,6 +63,8 @@ app.post('/login', async (req, res) => {
     }
 });
 
+app.get
+
 const walkRoutes = require('./routes/walkRoutes');
 const userRoutes = require('./routes/userRoutes');
 
