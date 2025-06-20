@@ -60,6 +60,8 @@ router.post('/:id/apply', async (req, res) => {
 });
 
 // GET /api/walks/mydogs - get all dogs owned by the logged user
-router.get()
+router.get('/mydogs', async (req, res) => {
+  const ownerId = req.
+})
 
 module.exports = router;
