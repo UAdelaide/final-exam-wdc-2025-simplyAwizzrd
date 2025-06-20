@@ -28,10 +28,6 @@ async function testData() {
     `);
 
     await db.execute(`
-        INSERT IGNORE INTO Walks (walker_id, dog_id, date, time, duration) VALUES
-        ((SELECT user_id FROM Users WHERE username = 'bobwalker'),
-         (SELECT dog_id FROM Dogs WHERE name = 'Max'), '2023-10-01', '10:00:00', 60),
-        ((SELECT user_id FROM Users WHERE username = 'bobwalker'),
-         (SELECT dog_id FROM Dogs WHERE name = 'Bella'), '2023-10-02', '11:00:00', 45);
+        INSERT IGNORE INTO Walks (request_id, walker_id, owner_id, rating) VALUES
     `);
 }
