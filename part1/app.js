@@ -30,6 +30,7 @@ async function testData() {
     await db.execute(`
         INSERT IGNORE INTO Walks (request_id, walker_id, owner_id, rating) VALUES
         ((SELECT request_id FROM WalkRequests WHERE request_id = 2),
-        (SELECT user_id FROM Users WHERE username = )
+        (SELECT user_id FROM Users WHERE username = 'bobwalker'),
+        (SELECT user_id FROM Users WHERE username = 'carol123'), 5);
     `);
 }
