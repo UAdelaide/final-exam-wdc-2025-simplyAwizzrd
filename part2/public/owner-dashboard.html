@@ -100,6 +100,7 @@
         async function loadDogs() {
           try {
             const res = await fetch('/api/walks/mydogs'); // Call the route to get the dogs
+            myDogs.value = await res.json(); // Fill the myDogs array with the response ... the dogs
           }
         }
 
