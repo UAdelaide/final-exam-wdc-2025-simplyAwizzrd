@@ -59,4 +59,6 @@ router.post('/:id/apply', async (req, res) => {
   }
 });
 
+// GET /api/walks/
+
 module.exports = router;
