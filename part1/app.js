@@ -20,4 +20,7 @@ async function testData() {
         ('bobwalker', 'bob@example.com', 'hashed456', 'walker'),
         ('carol123', 'carol@example.com', 'hashed789', 'owner');
     `);
+
+    await db.execute(`
+        INSERT IGNORE INTO Dogs (owner_id, name, size)
 }
