@@ -68,8 +68,9 @@ app.get('/logout', (req, res) => {
     // Destroy the session and redirect to the home page
     req.session.destroy(err => {
         if (err) {
-            console.error('Log')
+            console.error('Logout error: ', err);
         }
+        res.clearCookie('connect.')
     })
 })
 
