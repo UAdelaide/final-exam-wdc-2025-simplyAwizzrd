@@ -19,7 +19,9 @@ mysql.createConnection({
     password: '',
     database: 'DogWalkService'
 }).then(connection => {
-    
+    db = connection;
+}).catch(err => {
+    console.
 })
 })
 
