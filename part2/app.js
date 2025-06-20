@@ -11,8 +11,12 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, '/public')));
 
 // Routes
+// Login POST route
+app.post('/login', async (req, res) => {
+    const { username, password } = req.body;
 
-app.post('/login', async (req, res) => {})
+
+})
 
 const walkRoutes = require('./routes/walkRoutes');
 const userRoutes = require('./routes/userRoutes');
