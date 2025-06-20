@@ -64,7 +64,11 @@ router.get('/mydogs', async (req, res) => {
   const ownerId = req.session.user.id; // This assumes the user info is stored in the session
 
   try {
-    const [rows] = await db.query
+    const [rows] = await db.query(`
+      SELECT dog_id, name AS dog_name
+      FROM Dogs
+      WHERE owner_id = ?
+    `, [ownerId]);
   }
 })
 
