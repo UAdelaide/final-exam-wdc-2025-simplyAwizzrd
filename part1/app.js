@@ -8,5 +8,7 @@ async function databaseConnection() {
     db = await mysql.createConnection({
         host: 'localhost',
         root: 'root',
-        password: '', // Set your MySQL root password
+        password: '',
+        database: 'DogWalkService'
+    });
 }
