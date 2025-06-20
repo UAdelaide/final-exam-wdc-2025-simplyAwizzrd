@@ -45,6 +45,8 @@ app.post('/login', async (req, res) => {
         role: user.role
     };
 
+    // Then redirect based on the 
+
 })
 
 const walkRoutes = require('./routes/walkRoutes');
