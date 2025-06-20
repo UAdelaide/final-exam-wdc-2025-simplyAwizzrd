@@ -12,7 +12,7 @@ app.use(express.static(path.join(__dirname, '/public')));
 
 // Routes
 
-app.post('')
+app.post('/login', async (req, res) => {})
 
 const walkRoutes = require('./routes/walkRoutes');
 const userRoutes = require('./routes/userRoutes');
