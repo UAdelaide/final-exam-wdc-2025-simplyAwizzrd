@@ -55,7 +55,12 @@
       setup() {
           const message = ref('Welcome to the Dog Walking Service!');
           const dogs = ref([]);
-          onMounted(async () =>)
+          onMounted(async () => {
+            try {
+              const res = await fetch('/api/dogs');
+              const 
+            }
+          })
         };
       }
     }).mount('#app');
