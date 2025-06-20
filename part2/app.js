@@ -13,7 +13,7 @@ app.use(express.static(path.join(__dirname, '/public')));
 
 // Session config
 app.use(session({
-    
+    secret: 'secret'
 }))
 
 // Connect to the database
