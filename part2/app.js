@@ -14,7 +14,10 @@ app.use(express.static(path.join(__dirname, '/public')));
 let db;
 
 mysql.createConnection({
-    host: 'localhost'
+    host: 'localhost',
+    user: 'root',
+    password: '',
+    database: 'DogWalking'
 })
 
 // Routes
