@@ -11,10 +11,11 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, '/public')));
 
 // Routes
-// Login POST route
+// Login route
 app.post('/login', async (req, res) => {
     const { username, password } = req.body;
 
+    const [rows]
 
 })
 
