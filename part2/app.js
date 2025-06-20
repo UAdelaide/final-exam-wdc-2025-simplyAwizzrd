@@ -71,9 +71,9 @@ app.get('/logout', (req, res) => {
             console.error('Logout error: ', err);
         }
         res.clearCookie('connect.sid'); // Clear the session's cookie
-        
-    })
-})
+        res.redirect('/'); // Then just redirect to the login page
+    });
+});
 
 const walkRoutes = require('./routes/walkRoutes');
 const userRoutes = require('./routes/userRoutes');
