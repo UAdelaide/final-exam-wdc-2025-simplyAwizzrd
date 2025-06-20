@@ -15,5 +15,5 @@ async function databaseConnection() {
 
 async function testData() {
     await db.execute(`
-        INSERT 
+        INSERT IGNORE
 }
