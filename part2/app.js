@@ -14,7 +14,7 @@ app.use(express.static(path.join(__dirname, '/public')));
 // Session config - sign session ID cookie, and save new sessions
 app.use(session({
     secret: 'secret',
-    resave: false,
+    resave: false,         // Don't save session if unmodified
     saveUninitialized: true,
 }))
 
