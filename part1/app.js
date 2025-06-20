@@ -4,3 +4,6 @@ const app = express();
 
 let db;
 
+async function databaseConnection() {
+    
+}
