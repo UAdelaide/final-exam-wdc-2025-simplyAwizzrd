@@ -87,3 +87,5 @@ app.get('/api/walkers/summary', async (req, res) => {
         res.status(500).json({ error: err.message });
     }
 });
+
+app.l
