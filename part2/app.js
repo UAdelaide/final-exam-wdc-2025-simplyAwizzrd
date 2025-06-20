@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
-const session = require('express-session'); // For session management
-const mysql = require('mysql2/promise');
+const session = require('express-session'); // Session middleware to store user info
+const mysql = require('mysql2/promise'); // To connect to MySQL database
 require('dotenv').config();
 
 const app = express();
