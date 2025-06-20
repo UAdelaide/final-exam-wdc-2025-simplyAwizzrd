@@ -71,7 +71,9 @@ router.get('/mydogs', async (req, res) => {
     `, [ownerId]);
 
     res.json(rows);
-  } catch (error)
+  } catch (error) {
+    res.status(500).json({})
+  }
 })
 
 module.exports = router;
