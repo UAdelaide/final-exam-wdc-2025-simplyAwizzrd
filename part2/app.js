@@ -66,7 +66,11 @@ app.post('/login', async (req, res) => {
 // Logout route
 app.get('/logout', (req, res) => {
     // Destroy the session and redirect to the home page
-    req.session.destro
+    req.session.destroy(err => {
+        if (err) {
+            console.error('Log')
+        }
+    })
 })
 
 const walkRoutes = require('./routes/walkRoutes');
