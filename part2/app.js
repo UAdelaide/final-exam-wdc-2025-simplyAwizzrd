@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true })); // Almost forgot the middleware for form POST
 app.use(express.static(path.join(__dirname, '/public')));
 
-// Session config - sign session ID cookie, and save new sessions
+// Session config - sign session ID cookie, and save new sessions (don't save )
 app.use(session({
     secret: 'secret',
     resave: false,
