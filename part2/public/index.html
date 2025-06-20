@@ -60,7 +60,7 @@
               const res = await fetch('/api/dogs');
               const dogData = await res.json();
               for (const dog of dogData) {
-                dogs.value = dogData;
+                const img = await fetch('https:')
               }
             }
           })
