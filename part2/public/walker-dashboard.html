@@ -76,7 +76,9 @@
         async function applyToWalk(requestId) {
           try {
             const user = await getCurrentUser();
-            if ()
+            if (!user) {
+              error.value = 'Must be logged in to apply for walks'
+            }
 
             const res = await fetch(`/api/walks/${requestId}/apply`, {
               method: 'POST',
