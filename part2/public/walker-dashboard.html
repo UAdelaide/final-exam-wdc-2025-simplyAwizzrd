@@ -75,6 +75,9 @@
 
         async function applyToWalk(requestId) {
           try {
+
+
+
             const res = await fetch(`/api/walks/${requestId}/apply`, {
               method: 'POST',
               headers: { 'Content-Type': 'application/json' },
@@ -83,7 +86,7 @@
             const result = await res.json();
 
             if (!res.ok) throw new Error(result.error || 'Application failed');
-            
+
             message.value = result.message;
             error.value = '';
             await loadWalkRequests();
